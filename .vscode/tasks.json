@@ -2,30 +2,15 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "build_current_file",
+      "label": "build",
       "type": "shell",
       "command": "g++",
       "args": [
         "-g",
         "-std=c++11",
-        "${fileDirname}/${fileBasename}",
+        "src/*.cpp",
         "-o",
-        "${workspaceFolder}/build/${fileBasenameNoExtension}.out"
-      ],
-      "group": "build",
-      "problemMatcher": [
-        "$gcc"
-      ],
-    }, {
-      "label": "build_current_directory",
-      "type": "shell",
-      "command": "g++",
-      "args": [
-        "-g",
-        "-std=c++11",
-        "${fileDirname}/*.cpp",
-        "-o",
-        "${workspaceFolder}/build/${fileBasenameNoExtension}.out"
+        "${workspaceFolder}/build/atm.out"
       ],
       "group": "build",
       "problemMatcher": [
