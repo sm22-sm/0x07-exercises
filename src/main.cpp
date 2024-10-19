@@ -1,11 +1,12 @@
-#include <iostream>
-#include "atm.h"
-
-using namespace std;
+#include "triangle.h"
+#include "test.h"
 
 int main() {
-  ATM atm = ATM();
-  atm.withdraw(7);
-  atm.withdraw(475);
+
+  Triangle t1 = Triangle();
+  t1.setSides(2, 3, 4);
+
+  
+
   return 0;
 }
