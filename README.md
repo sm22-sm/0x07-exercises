@@ -1,23 +1,19 @@
 # 0x07 Exercises
 Developer environment for SW1OPRG-01
 
-## 0x00
+## 0x00 - Triangle
 
-Create a class `ATM` with a default constructor and the following member variables:
-- a variable that holds the number of $100 notes
-- a variable that holds the number of $50 notes
-- a variable that holds the number of $20 notes
-- a variable that holds the number of $10 notes
-- a variable that holds the number of $5 notes 
+Create the files must be named `triangle.h` and `triangle.cpp` in the directory where `main.cpp` is located (be sure the paths are correct).
 
-What data type is best suitable to represent the number of each individual denomination?
+Implement a class `Triangle` with the following:
 
-## 0x01
+- Data members `a`, `b` and `c` each representing a side of the triangle. Should the sides be of type `int` or `float`?
+- Member functions
+  - `Triangle()`
+  - `void setSides(double a, double b, double c)`
+  - `double circumference()`
+  - `double print()`
+  - Getters and setters for each data member (six functions in total)
 
-Add a constructor that initializes the member variables and make sure the following invariants holds true:
-- There can be a negative number of notes of any demonination
-- There can be at most 200 $100 notes
-- There can be at most 200 $50 notes
-- There can be at most 300 $20 notes
-- There can be at most 300 $10 notes
-- There can be at most 100 $5 notes
+
+Test the function by running the program provided in `main.cpp`
