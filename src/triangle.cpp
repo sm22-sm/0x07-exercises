@@ -1,13 +1,15 @@
 #include "triangle.h"
 
-Triangle::Triangle() {
-
-}
+Triangle::Triangle() : a(1), b(1), c(1) { }
 
 void Triangle::setSides(double a, double b, double c) {
-  setA(a);
-  setB(b);
-  setC(c);
+  if(inequality() && a > 0 && b > 0 && c > 0) {
+    this->a = a;
+    this->b = b;
+    this->c = c;
+  } else {
+    this->a, this->b, this->c = 0;
+  }
 }
 
 double Triangle::circumference() {
@@ -51,5 +53,5 @@ void Triangle::setC(double c) {
 }
 
 bool Triangle::inequality() {
-  return (a + b > c) && (a + c > b) && (b + c > a);
+  return (a + b >= c) && (a + c >= b) && (b + c >= a);
 }
