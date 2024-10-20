@@ -20,6 +20,7 @@ class Triangle {
     double a;
     double b;
     double c;
+    bool inequality();
 };
 
 #endif

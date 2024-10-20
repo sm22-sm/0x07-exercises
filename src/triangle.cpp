@@ -27,13 +27,29 @@ double Triangle::getC() const {
 }
 
 void Triangle::setA(double a) {
-  this->a = a;
+  if(a > 0 && inequality()) {
+    this->a = a;
+  } else {
+    this->a = 0;
+  }
 }
 
 void Triangle::setB(double b) {
-  this->b = b;
+  if(b > 0 && inequality()) {
+    this->b = b;
+  } else {
+    this->b = 0;
+  }
 }
 
 void Triangle::setC(double c) {
-  this->c = c;
+  if(c > 0 && inequality()) {
+    this->c = c;
+  } else {
+    this->c = 0;
+  }
+}
+
+bool Triangle::inequality() {
+  return (a + b > c) && (a + c > b) && (b + c > a);
 }
