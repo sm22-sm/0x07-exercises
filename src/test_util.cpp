@@ -1,4 +1,4 @@
-#include "test.h"
+#include "test_util.h"
 
 Test::Test(string title) {
   this->title = title;
