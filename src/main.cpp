@@ -6,7 +6,6 @@ int main() {
   Triangle t1 = Triangle();
   t1.setSides(3, 4, 5);
   
-  
   Test getters = Test("getters");
   getters.equal(3, t1.getA(), "check getA()");
   getters.equal(4, t1.getB(), "check getB()");
