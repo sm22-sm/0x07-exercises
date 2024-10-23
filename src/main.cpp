@@ -1,5 +1,5 @@
 #include "triangle.h"
-#include "test.h"
+#include "test_util.h"
 
 int main() {
 
