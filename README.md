@@ -56,11 +56,13 @@ This implementation for the `Test` class can be found in `test_util.h` and `test
 Here are some useful information about triangles you might want to consider when working on this exercise
 
 The circumference of a triangle defined as perimeter $P$:
+
 $$
 P = a + b + c
 $$
 
 The area of a triangle can be calculated with Heron's formula, the the semi-perimeter is given by $s$ and the area is given by $A$:
+
 $$
 s = \frac{a + b + c}{2}, \quad A = \sqrt{s(s - a)(s - b)(s - c)}
 $$
