@@ -25,5 +25,9 @@ int main() {
   Test circumference = Test("circumference");
   circumference.equal(12, t_circumference.circumference(), "check circumference()");
 
+  Triangle t_area = Triangle(3, 4, 5);
+  Test area = Test("area");
+  area.equal(6, t_area.area(), "check area()");
+
   return 0;
 }
